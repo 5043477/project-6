@@ -7,8 +7,12 @@ class Main {
     System.out.println("What is your full name? ");
     String fullName = scan.nextLine();
     int index = fullName.indexOf("5");
-    String firstName = fullName.substring(0, 5);
-    System.out.println(" what is the middle characecter in your name?");
-    String index1 = scan.next();
+    String firstName = (fullName.substring(0, index));
+    if (fullName.equals(firstNames)) {
+      System.out.println("welcome back" + firstName);
+    } else {
+      System.out.println("sorry, i think you are in the wrong class");
+    }
+
   }
 }
